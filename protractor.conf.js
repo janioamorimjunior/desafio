@@ -5,10 +5,7 @@ exports.config = {
 
     allScriptsTimeout: 120000,
 
-    //seleniumAddress: 'http://localhost:4444/wd/hub',
     directConnect: true,
-   // highlightDelay: 1000,
-    //baseUrl: 'http://localhost',
     capabilities: {
         browserName: 'firefox',
         shardTestFiles: false,
@@ -18,10 +15,10 @@ exports.config = {
     framework: 'jasmine',
     suites: {
         pesquisa: [
-            //'./e2e/specs/pesquisa.e2e-spec.ts'
+            './e2e/specs/pesquisa.e2e-spec.ts'
         ],
         carrinho: [
-            //'./e2e/specs/carrinho.e2e-spec.ts'
+            './e2e/specs/carrinho.e2e-spec.ts'
         ],
         produto: [
             './e2e/specs/produto.e2e-spec.ts'
