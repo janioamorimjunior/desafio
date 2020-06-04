@@ -22,7 +22,7 @@ export class AmericanasResultadoPesquisaPage extends SimplePage {
         return await this.elementoEstaPresente(this.labelPaginacao);
     }
 
-    async ValidarPesquisaComProdutosDoResultado(pesquisa: string) {
+    async validarPesquisaComProdutosDoResultado(pesquisa: string) {
 
         await this.esperarVisibilidadeDo(this.tabela);
 

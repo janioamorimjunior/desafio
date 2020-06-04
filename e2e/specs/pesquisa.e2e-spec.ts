@@ -30,13 +30,13 @@ describe('Pesquisas', async () => {
 
         await inicialPage.pesquisar('abobrinhas');
 
-        await resultadoPage.ValidarPesquisaComProdutosDoResultado('abobrinhas');
+        await resultadoPage.validarPesquisaComProdutosDoResultado('abobrinhas');
     });
 
     it('Validar se o nome dos produtos contem o que foi informado na pesquisa com paginação', async () => {
 
         await inicialPage.pesquisar('gundam');
 
-        await resultadoPage.ValidarPesquisaComProdutosDoResultado('gundam');
+        await resultadoPage.validarPesquisaComProdutosDoResultado('gundam');
     });
 });

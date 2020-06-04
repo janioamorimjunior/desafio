@@ -8,6 +8,7 @@ export class AmericanasInicialPage extends SimplePage {
     botaoPesquisar = element(by.id('h_search-btn'));
 
     botaoCarrinho = element(by.xpath(`//a[@class='crt-link']`));
+
     async pesquisar(pesquisa: string) {
 
         await this.inserirDado(this.campoBarraPesquisar, pesquisa);
@@ -16,6 +17,7 @@ export class AmericanasInicialPage extends SimplePage {
     }
 
     async irParaCarrinho() {
+
         await this.clicarElemento(this.botaoCarrinho);
     }
 }
