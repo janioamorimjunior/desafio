@@ -121,10 +121,13 @@ export class AmericanasResultadoPesquisaPage extends SimplePage {
     async selecionarProdutoAleatorio() {
 
         var produtosNaPaginaDaTabela = await element.all(by.xpath(`//div[@data-tracker='productgrid-main']//h2`));
+
         var precosNaPaginaDoResultado = await element.all(by.xpath(`//div[@data-tracker='productgrid-main']//div[@class='PriceWrapper-bwhjk3-13 IjiIU ViewUI-sc-1ijittn-6 iXIDWU']/span`));
+
         let index = Utils.gerarnumeroaleatorio(0, produtosNaPaginaDaTabela.length);
 
         let nomeProduto: string = await this.pegarTexto(produtosNaPaginaDaTabela[index]);
+
         let precoProduto: string = await this.pegarTexto((precosNaPaginaDoResultado[index]));
 
         await this.clicarElemento(produtosNaPaginaDaTabela[index]);
