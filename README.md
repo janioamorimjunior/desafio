@@ -13,3 +13,7 @@ depois de clonado o projeto, é preciso instalar as dependências do projeto usa
 npm install
 
 depois só executar o comando protractor na raiz do projeto que o teste vai iniciar;
+
+dps que o teste finaliza, para subir o report do allure precisa executar o comando seguinte:
+
+allure serve
