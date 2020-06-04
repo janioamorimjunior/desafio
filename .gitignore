@@ -18,7 +18,7 @@ e2e/**/*.js
 logs/
 .jscpd/
 report/
-allure-results/
+allure-results
 
 # IDEs and editors
 /.idea
